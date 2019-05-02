@@ -1,7 +1,6 @@
 import React from 'react';
 import AnimeCard from './AnimeCard';
 import Slider from 'react-slick';
-import { Link } from 'react-router-dom';
 import SearchBar from './SearchBar';
 
 class AnimeCardList extends React.Component {
@@ -77,9 +76,9 @@ class AnimeCardList extends React.Component {
 
 				<Slider {...settings}>
 					{filteredAnimes.map((anime, i) => (
-						<Link to={{ pathname: `/anime/${anime._id}`, state: { id: anime.given_id } }}>
+						
 							<AnimeCard style={{ marginLeft: '40px', marginRight: '40px' }} anime={anime} />
-						</Link>
+						
 					))}
 				</Slider>
 			</div>
