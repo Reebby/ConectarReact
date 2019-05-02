@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+body {
+  background: #111;
+}
+
+.headerText {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  margin: 20px 0px -80px 0px;
+}
+
+.card-detail {
+  margin-top: -30px;
+ margin-right: 500px;
+}
+
+#card::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
+
+#card {
+  position: relative;
+  margin: 100px auto 20px;
+  width: 400px;
+  background: url("https://images2.alphacoders.com/615/615331.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -230px center;
+  height: 500px;
+  border-radius: 10px;
+  box-shadow: 0 6px 40px rgba(90, 102, 127, 0.3);
+}
+#card .inner {
+  font-family: "Lato", open-sans;
+}
+#card .inner .header {
+  position: relative;
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+#card .inner .header .fa-info-circle {
+  z-index: 999;
+  color: #fff;
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  cursor: pointer;
+}
+#card .inner .header h1 {
+  color: #fff;
+  margin: 10px 0;
+}
+#card .inner .header .stars {
+  margin: 0;
+  color: #e94438;
+}
+#card .inner .content {
+  position: relative;
+  padding: 0 10px;
+  margin-top: 175px;
+}
+#card .inner .content p {
+  min-width: 90%;
+  font-weight: 300;
+  width: 90%;
+  color: #fff;
+  font-size: 14px;
+  margin: 8px 0;
+}
+#card .inner .content a {
+  cursor: pointer;
+  color: #e94438;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+}
+#card .inner .btn_row {
+  position: relative;
+  text-align: center;
+  padding: 40px;
+}
+#card .inner .btn_row a {
+  background: #e94438;
+  padding: 10px 50px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 6px 40px rgba(233, 68, 56, 0.7);
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease-in;
+}
+#card .inner .btn_row a i {
+  color: #fff;
+  font-size: 14px;
+  margin-left: 10px;
+  font-weight: 900;
+}
+#card .inner .btn_row a:hover {
+  background: #ec5a4f;
+  cursor: pointer;
+}
+
+.btn_row_next_prev {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 100px;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  height: 26px;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 26px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 26px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 50%;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #43423E;
+}
+
+a {
+  text-decoration: none;
+  color: #5C7FB8;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.movie-card {
+  font: 14px/22px "Lato", Arial, sans-serif;
+  color: #A9A8A3;
+  padding: 40px 0;
+}
+
+.back {
+    color: #fff;
+    font-size: 22px;
+    text-align: center
+}
+
+.container {
+  margin: 0 auto;
+  width: 780px;
+  height: 1000px;
+  background: #F0F0ED;
+  border-radius: 5px;
+  position: relative;
+}
+
+.hero {
+  height: 342px;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.hero:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background: red;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/hobbit_bg.jpg");
+  z-index: -1;
+  -webkit-transform: skewY(-2.2deg);
+          transform: skewY(-2.2deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-backface-visibility: hidden;
+}
+
+.cover {
+  position: absolute;
+  top: 160px;
+  left: 40px;
+  z-index: 2;
+}
+
+.details {
+  padding: 190px 0 0 280px;
+}
+.details .title1 {
+  color: white;
+  font-size: 44px;
+  margin-bottom: 13px;
+  position: relative;
+}
+.details .title1 span {
+  position: absolute;
+  top: 3px;
+  margin-left: 12px;
+  background: #C4AF3D;
+  border-radius: 5px;
+  color: #544C21;
+  font-size: 14px;
+  padding: 0px 4px;
+}
+.details .title2 {
+  color: #C7C1BA;
+  font-size: 23px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+.details .likes {
+  margin-left: 24px;
+}
+.details .likes:before {
+  content: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/icon_like.png");
+  position: relative;
+  top: 2px;
+  padding-right: 7px;
+}
+
+.description {
+  bottom: 0px;
+  height: 200px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #B1B0AC;
+}
+
+.column1 {
+  padding-left: 50px;
+  padding-top: 120px;
+  width: 220px;
+  float: left;
+  text-align: center;
+}
+
+.tag {
+  background: white;
+  border-radius: 10px;
+  padding: 3px 8px;
+  font-size: 14px;
+  margin-right: 4px;
+  line-height: 35px;
+  cursor: pointer;
+}
+
+.tag:hover {
+  background: #ddd;
+}
+
+.column2 {
+  padding-left: 41px;
+  padding-top: 30px;
+  margin-left: 20px;
+  width: 480px;
+  float: left;
+}
+
+.avatars {
+  margin-top: 23px;
+}
+.avatars img {
+  cursor: pointer;
+}
+.avatars img:hover {
+  opacity: 0.6;
+}
+.avatars a:hover {
+  text-decoration: none;
+}
+
